@@ -1,0 +1,126 @@
+<html lang="fr">
+    
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo">
+        
+        <style>
+            body { background: #b6d2ec; }
+        </style>
+
+        <title>
+            Projet Data Engineering
+        </title>
+        
+        <style>
+            .button {
+            background-color: #1c87c9;
+            border: none;
+            color: white;
+            padding: 20px 34px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 80px;
+            cursor: pointer;
+            border-radius: 7px;
+            }
+            .button:hover{
+            background:#FF0000;
+            }
+        </style>
+
+    </head>
+
+    <body>
+    
+        <div class="container">
+            <div class="row">
+                <div style="font-family: 'Archivo';">
+        
+                    <p> 
+
+                        <center>
+                            <font size="7">
+                                Top film
+                            </font>
+                        </center>
+
+                    </p>
+          
+                    <form method="POST">
+                        <label for="tops">
+                            <font size="5">
+                                Recherchez un top film :
+                            </font>
+                        </label>
+                        <select name="tops" id="tops">
+                            <option value="bestpub" selected>Meilleurs films (note public)</option>
+                            <option value="bestpre">Meilleurs films (note presse)</option>
+                            <option value="rent">Meilleur rentabilité</option>
+                            <option value="recent">Plus récent</option>
+                            <option value="ancien">Plus ancien</option>
+                            <option value="long">Film les plus long</option>
+                            <option value="court">Film les plus court</option>
+                        </select>
+                  
+                        <br>
+                        <br>
+    
+                        <label for="genres">
+                            <font size="5">
+                                Genre :
+                            </font>
+                        </label>
+                        <select name="genres" id="genres">
+                            <option value="All" selected>Tout</option>
+                            <option value="Action">Action</option>
+                            <option value="Animation">Animation</option>
+                            <option value="Aventure">Aventure</option>
+                            <option value="Biopic">Biopic</option>
+                            <option value="Comédie">Comédie</option>
+                            <option value="Comédie dramatique">Comédie dramatique</option>
+                            <option value="Comédie musicale">Comédie musicale</option>
+                            <option value="Divers">Divers</option>
+                            <option value="Documentaire">Documentaire</option>
+                            <option value="Drame">Drame</option>
+                            <option value="Epouvante-horreur">Epouvante-horreur</option>
+                            <option value="Espionnage">Espionnage</option>
+                            <option value="Famille">Famille</option>
+                            <option value="Fantastique">Fantastique</option>
+                            <option value="Guerre">Guerre</option>
+                            <option value="Historique">Historique</option>
+                            <option value="Musical">Musical</option>
+                            <option value="Policier">Policier</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Science fiction">Science fiction</option>
+                            <option value="Thriller">Thriller</option>
+                            <option value="Western">Western</option>
+                        </select>
+                  
+                        <br>
+                        <br>
+
+                        <label for="number">
+                            <font size="5">
+                                Nombre de films affichés :
+                            </font>
+                        </label>
+                      
+                        <input type="number" id="nb" name="nb" value="1" min="1" max="50">
+                      
+                        <br>
+                        <br>
+                        
+                        <input type="submit" value="Recherche Top">
+                        
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

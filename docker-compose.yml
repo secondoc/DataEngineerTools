@@ -34,6 +34,11 @@ services:
       - ./data/mongo:/data/db
     ports:
         - 27017:27017
+  flask:
+    image: demo-dockerflask
+    container_name: flask
+    ports:
+        - "80:80"
   notebook:
     build: .
     ports:
